@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("Hello from CI/CD!\n");
+    printf("Test again from CI/CD!\n");
     return 0;
 }
