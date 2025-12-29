@@ -1,0 +1,14 @@
+name: AI Vulnerability Scanner
+
+on: [push]
+
+jobs:
+  ml-security-scan:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Run ML Scanner
+        run: |
+          python3 /home/ubuntu/scan_repo.py
